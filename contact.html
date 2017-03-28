@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Portfolio</title>
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<meta name="viewport" content="width=device-width">
+	
+</head>
+<body>
+
+<header>
+	<div class="headerContainer">
+		<h1 id="name">Loree Montoya</h1>
+		<nav>
+			<ul>
+				<li><a class="pages" href="index.html">About</a></li>
+				<li><a class="pages" href="portfolio.html">Portfolio</a></li>
+				<li><a class="pages" href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</div>	
+</header>
+
+<div class="wrapper">
+	<div class="container">
+		<section class="contactPage">
+			<h2>Contact</h2>
+			<hr>
+			<form method="post" action="show-data.php">
+				<fieldset>
+					<div class="fields">
+						<p class="row">
+							<label for="nameField">Name:</label>
+							<br>
+							<br>
+							<input type="text" id="nameField" name="name_Field"
+							placeholder="  John Smith"
+							class="field-large" required
+							aria-required="true">
+						</p>
+
+						<p class="row">
+							<label for="emailField">Email:</label>
+							<br>
+							<br>
+							<input type="email" id="emailField" name="email_Field" placeholder="  example@email.com" 
+							class="field-large">
+						</p>
+
+						<p class="row">
+							<label for="messageField">Message:</label>
+							<br>
+							<br>
+							<textarea id="messageField" name="messageField" class="field-large"></textarea>
+							<br>
+							<br>
+							<input type="submit" 
+							class="submitButton"
+							value="Submit">
+						</p>	
+					</div>						
+				</fieldset>
+			</form>
+		</section>
+			
+		<aside>
+			<h3>Connect with Me</h3>
+			<hr>
+			<a href="https://www.github.com/" target="_blank"><img class="socialIcons" src="assets/images/1489831074_github_square_black.svg" alt="github"></a>
+			<a href="https://www.linkedin.com/" target="_blank"><img class="socialIcons" src="assets/images/1489830929_linkedin_square_color.svg" alt="linkedin"></a>
+			<a href="https://www.stackoverflow.com/" target="_blank"><img class="socialIcons" id="stackIcon" src="assets/images/1489831034_stackoverflow.png" alt="stackoverflow"></a>
+		</aside>
+	</div>		
+</div>
+<footer>&copy; copyright 2017 Loree Montoya
+</footer>
+</body>
+</html>
